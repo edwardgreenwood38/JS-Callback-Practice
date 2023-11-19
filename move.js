@@ -62,4 +62,8 @@ function move(element) {
     return {
         to: moveToCoordinates
     }
+
+    // return {
+    //     keys: moveWithArrowKeys
+    // }
 }

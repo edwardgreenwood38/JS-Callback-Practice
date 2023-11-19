@@ -2,6 +2,9 @@ const inventory = newInventory()
 move(inventory).to(0, 0)
 
 const character = newImage('assets/green-character/static.gif')
+let direction = null;
+
+// debugger
 
 function handleDirectionChange(direction){
     if(direction === null){
@@ -21,7 +24,7 @@ function handleDirectionChange(direction){
     }
 }
 
-move(character).withArrowKeys(100, 250, handleDirectionChange);
+move(character).moveWithArrowKeys(100, 250, direction);
 
 
 
