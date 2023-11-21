@@ -24,7 +24,7 @@ function handleDirectionChange(direction){
     }
 }
 
-move(character).move(120, 250);
+move(character).move(120, 250, handleDirectionChange);
 
 
 
