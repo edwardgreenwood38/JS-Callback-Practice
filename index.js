@@ -24,7 +24,7 @@ function handleDirectionChange(direction){
     }
 }
 
-move(character).moveWithArrowKeys(100, 250, direction);
+move(character).move(120, 250);
 
 
 
