@@ -50,12 +50,14 @@ function move(element) {
                 direction = 'south'
             }
 
-            callback(direction)
+            if (typeof callback === 'function') {
+                callback(direction)
+            }
         })
         
         document.addEventListener('keyup', function(e){
             direction = null
-            cancelIdleCallback(direction)
+            callback(direction)
         })
     }
     
